@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fast, simple and free QR code generator." />
+  <title>QR Code Generator — Fast. Simple. Free.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#">
+      <span class="brand-icon">⌘</span>
+      <span>QR Code Generator</span>
+    </a>
+
+    <nav class="nav">
+      <a class="active" href="#generator">QR Code Generator</a>
+      <a href="#features">Features</a>
+      <a href="#templates">Templates</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#blog">Blog</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#" class="login">Log in</a>
+      <a href="#" class="signup">Sign up</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="generator">
+      <div class="hero-copy">
+        <span class="eyebrow">Free QR Code Generator</span>
+        <h1>Create QR Codes in Seconds<br><span>Fast. Simple. Free.</span></h1>
+        <p>
+          Generate QR codes for URLs, text, Wi-Fi, files, and more.
+          Customize the design, download in high quality, and start sharing instantly.
+        </p>
+
+        <div class="benefits">
+          <span><i>✓</i> No signup required</span>
+          <span><i>✓</i> High-resolution output</span>
+          <span><i>✓</i> Customizable design</span>
+          <span><i>✓</i> Works on all devices</span>
+        </div>
+      </div>
+
+      <div class="generator-card">
+        <div class="generator-main">
+          <div class="tabs">
+            <button class="tab active" data-type="url">↗ <span>URL</span></button>
+            <button class="tab" data-type="text">T <span>Text</span></button>
+            <button class="tab" data-type="wifi">⌁ <span>Wi-Fi</span></button>
+            <button class="tab" data-type="email">✉ <span>Email</span></button>
+            <button class="tab" data-type="phone">⌕ <span>Phone</span></button>
+            <button class="tab more-tab" data-type="more">More <small>⌄</small></button>
+          </div>
+
+          <div class="form-area">
+            <label id="input-label" for="qr-input">Enter URL</label>
+            <input id="qr-input" type="url" value="https://www.ramascript.com" placeholder="https://example.com" />
+            <button class="generate-btn" id="generate-btn">Generate QR Code</button>
+          </div>
+
+          <button class="customize-toggle" id="customize-toggle">
+            <span>⚙ &nbsp;Customize <small>(optional)</small></span>
+            <span id="chevron">⌄</span>
+          </button>
+
+          <div class="customize-panel" id="customize-panel">
+            <div>
+              <label for="fg-color">QR color</label>
+              <input id="fg-color" type="color" value="#111827">
+            </div>
+            <div>
+              <label for="bg-color">Background</label>
+              <input id="bg-color" type="color" value="#ffffff">
+            </div>
+            <div>
+              <label for="qr-size">Size</label>
+              <select id="qr-size">
+                <option value="220">220 px</option>
+                <option value="300" selected>300 px</option>
+                <option value="500">500 px</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="qr-side">
+          <div class="qr-preview">
+            <div id="qr-code" aria-label="Generated QR code"></div>
+          </div>
+          <button class="download-btn" id="download-btn">↓ &nbsp; Download</button>
+          <button class="copy-btn" id="copy-btn">▣ &nbsp; Copy</button>
+          <div class="status" id="status"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <article class="feature">
+        <div class="feature-icon blue">↗</div>
+        <h3>Multiple Content Types</h3>
+        <p>URLs, text, Wi-Fi, email, phone, SMS, vCard, files and more.</p>
+      </article>
+      <article class="feature">
+        <div class="feature-icon purple">◉</div>
+        <h3>Fully Customizable</h3>
+        <p>Change colors, add your logo, choose patterns and frames.</p>
+      </article>
+      <article class="feature">
+        <div class="feature-icon green">↓</div>
+        <h3>High-Quality Downloads</h3>
+        <p>Get crisp, high-resolution QR codes in PNG format.</p>
+      </article>
+      <article class="feature">
+        <div class="feature-icon orange">ϟ</div>
+        <h3>No Sign-Up Needed</h3>
+        <p>Start creating instantly, no account required.</p>
+      </article>
+      <article class="feature">
+        <div class="feature-icon cyan">◇</div>
+        <h3>Secure &amp; Reliable</h3>
+        <p>Your QR content stays private in your browser.</p>
+      </article>
+    </section>
+
+    <section class="trusted" id="templates">
+      <h2>Trusted by Millions Worldwide</h2>
+      <p>From small businesses to global brands, everyone uses our QR code generator.</p>
+      <div class="logos">
+        <span>Google</span>
+        <span>▶ YouTube</span>
+        <span>◉ Spotify</span>
+        <span>⊞ Microsoft</span>
+        <span>amazon</span>
+        <span>◎ Instagram</span>
+      </div>
+    </section>
+
+    <section class="bottom-cta" id="pricing">
+      <h2>Ready to create your QR code?</h2>
+      <p>It takes seconds. No account. No hassle.</p>
+      <a href="#generator">Create a QR Code →</a>
+    </section>
+  </main>
+
+  <footer id="blog">
+    <span>© 2026 QR Code Generator</span>
+    <span>Fast · Simple · Private</span>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
